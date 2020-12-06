@@ -1,0 +1,48 @@
+/*===================================================================================*/
+/*	CUSTOM CSS STYLES
+/*===================================================================================*/
+
+/* Insert your own styles in here! */
+
+.get-started {
+	background-color: #3949ab !important; /* Black background color */
+	color: #fff !important;
+}
+
+.get-started:hover {
+	background-color: inherit !important;
+	border: 1px solid #3949ab !important;
+	color: #3949ab !important;
+}
+
+@media only screen and (max-width: 786px) {
+	.get-started {
+		background-color: inherit !important; /* Black background color */
+		color: inherit !important;
+	}
+
+	.get-started:hover {
+		background-color: inherit !important;
+		border: inherit !important;
+		color: inherit !important;
+	}
+}
+.dark-bg .icn {
+	color: #fff !important;
+}
+
+.modal .modal-list li {
+	padding: 8px 0 !important;
+}
+
+.modal .modal-list li:hover {
+	background-color: #3949ab !important;
+}
+
+.modal .modal-list li:hover a {
+	color: white !important;
+}
+
+#choose-lang:visited {
+	color: #677585 !important;
+}
