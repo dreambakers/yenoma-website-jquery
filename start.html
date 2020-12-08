@@ -389,17 +389,26 @@
 							</ul>
 						</div>
 						<div class="col-md-4">
-							<ul class="footer-menu float-right">
-								<li>
+							<ul class="float-right lang-switch">
+								<li class="dropup">
 									<a
-										id="choose-lang"
-										type="button"
-										data-toggle="modal"
-										href="#modal-notification01"
+										href="#"
+										class="dropdown-toggle"
+										data-toggle="dropdown"
 									>
 										Change Language
 									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="?lang=en">English</a>
+										</li>
+										<li>
+											<a href="?lang=de">Deutsch </a>
+										</li>
+									</ul>
+									<!-- /.dropdown-menu -->
 								</li>
+								<!-- /.dropdown -->
 							</ul>
 						</div>
 					</div>
@@ -409,72 +418,7 @@
 				<!-- .container -->
 			</div>
 			<!-- .footer-bottom -->
-			<!-- ============================================================= MODAL NOTIFICATION01 ============================================================= -->
-
-			<!-- ============================================================= MODAL NOTIFICATION01 : END ============================================================= -->
 		</footer>
-		<div
-			class="modal fade"
-			id="modal-notification01"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="modal-notification01"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xs">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title" id="modal-notification01">
-							Choose Language
-						</h4>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-							aria-label="Close"
-						>
-							<span aria-hidden="true"
-								><i class="icon-cancel-1"></i
-							></span>
-						</button>
-					</div>
-					<!-- /.modal-header -->
-
-					<!-- ============================================================= MODAL CONTENT ============================================================= -->
-
-					<div class="modal-body">
-						<div class="container inner-xs text-center">
-							<ul class="modal-list">
-								<li>
-									<a href="#en" data-dismiss="modal"
-										>English
-									</a>
-								</li>
-								<li>
-									<a href="#de" data-dismiss="modal">
-										Deutsch
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- /.container -->
-					</div>
-					<!-- /.modal-body -->
-
-					<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
-
-					<div class="modal-footer">
-						<button type="button" class="btn" data-dismiss="modal">
-							Close
-						</button>
-					</div>
-					<!-- /.modal-footer -->
-				</div>
-				<!-- /.modal-content -->
-			</div>
-			<!-- /.modal-dialog -->
-		</div>
-		<!-- /.modal -->
 		<!-- ============================================================= FOOTER : END ============================================================= -->
 
 		<!-- JavaScripts placed at the end of the document so the pages load faster -->
