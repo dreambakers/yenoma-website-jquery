@@ -91,16 +91,36 @@
 							<!-- ============================================================= MAIN NAVIGATION ============================================================= -->
 							<ul class="nav navbar-nav">
 								<li>
-									<a href="index.html">Home</a>
+									<a data-i18n="header-home" href="index.html"
+										>Home</a
+									>
 								</li>
 								<li>
-									<a href="about.html">About</a>
+									<a
+										data-i18n="header-about"
+										href="about.html"
+										>About</a
+									>
 								</li>
 								<li>
-									<a href="contact.html">Contact</a>
+									<a
+										data-i18n="header-contact"
+										href="contact.html"
+										>Contact</a
+									>
 								</li>
 								<li>
-									<a class="get-started" href="start.html"
+									<a
+										data-i18n="header-why"
+										href="why-yenoma.html"
+										>Why Us</a
+									>
+								</li>
+								<li>
+									<a
+										data-i18n="header-start"
+										class="get-started"
+										href="start.html"
 										>Get Started</a
 									>
 								</li>
@@ -130,8 +150,10 @@
 					<div class="row">
 						<div class="col-lg-8 col-md-9 mx-auto text-center">
 							<header>
-								<h1>Get in touch</h1>
-								<p>
+								<h1 data-i18n="contact_page-hero-main_h1">
+									Get in touch
+								</h1>
+								<p data-i18n="contact_page-hero-main_p">
 									Do you want to know more? We’d love to hear
 									from you!
 								</p>
@@ -147,14 +169,13 @@
 								<div
 									class="col-md-6 outer-top-md inner-right-sm"
 								>
-									<h2>Leave a Message</h2>
-
-									<form
-										id="contactform"
-										class="forms"
-										action="contact.php"
-										method="post"
+									<h2
+										data-i18n="contact_page-leave_a_message-main_h2"
 									>
+										Leave a Message
+									</h2>
+
+									<form id="contactform" class="forms">
 										<div class="row">
 											<div class="col-md-6">
 												<input
@@ -207,6 +228,7 @@
 										<!-- /.row -->
 
 										<button
+											data-i18n="contact_page-leave_a_message-input-submit"
 											type="submit"
 											class="btn btn-submit"
 										>
@@ -221,8 +243,14 @@
 								<div
 									class="col-md-6 outer-top-md inner-left-sm border-left"
 								>
-									<h2>Contacts</h2>
-									<p>
+									<h2
+										data-i18n="contact_page-contacts-main_h2"
+									>
+										Contacts
+									</h2>
+									<p
+										data-i18n="contact_page-contacts-main_1_p"
+									>
 										Magnis modipsae voloratati andigen
 										daepeditem quiate re aut labor. Laceaque
 										eictemperum quiae sitiorem rest non
@@ -235,7 +263,10 @@
 											<i
 												class="icon-location contact"
 											></i>
-											84 Street, City, State 24813
+											<span data-i18n="footer-address"
+												>84 Street, City, State
+												24813</span
+											>
 										</li>
 										<li>
 											<i class="icon-mobile contact"></i>
@@ -253,7 +284,11 @@
 									<!-- /.contacts -->
 
 									<div class="social-network">
-										<h3>Social</h3>
+										<h3
+											data-i18n="contact_page-contacts-main_h3"
+										>
+											Social
+										</h3>
 										<ul class="social">
 											<li>
 												<a href="#"
@@ -322,25 +357,30 @@
 			<div class="container inner">
 				<div class="row">
 					<div class="col-lg-4 col-md-6 inner">
-						<h4>Who we are</h4>
+						<h4 data-i18n="footer-who_we_are">Who we are</h4>
 						<a href="index.html"
 							><img
 								class="logo img-intext"
 								src="assets/images/logo_cs_white.svg"
 								alt=""
 						/></a>
-						<p>
+						<p data-i18n="footer-who_desc">
 							Magnis modipsae voloratati andigen daepeditem quiate
 							re porem que aut labor. Laceaque eictemperum quiae
 							sitiorem rest non restibusaes maio es dem tumquam.
 						</p>
-						<a href="about.html" class="txt-btn">More about us</a>
+						<a
+							data-i18n="footer-more_about_us"
+							href="about.html"
+							class="txt-btn"
+							>More about us</a
+						>
 					</div>
 					<!-- /.col -->
 
 					<div class="col-lg-4 col-md-6 inner ml-auto">
-						<h4>Free updates</h4>
-						<p>
+						<h4 data-i18n="footer-free_updates">Free updates</h4>
+						<p data-i18n="footer-free_desc">
 							Conecus iure posae volor remped modis aut lor volor
 							accabora incim resto explabo.
 						</p>
@@ -349,7 +389,10 @@
 							class="form-inline newsletter"
 							role="form"
 						>
-							<label class="sr-only" for="exampleInputEmail"
+							<label
+								data-i18n="footer-news_letter-email"
+								class="sr-only"
+								for="exampleInputEmail"
 								>Email address</label
 							>
 							<input
@@ -358,7 +401,11 @@
 								id="exampleInputEmail"
 								placeholder="Enter your email address"
 							/>
-							<button type="submit" class="btn btn-submit">
+							<button
+								data-i18n="footer-news_letter-subscribe"
+								type="submit"
+								class="btn btn-submit"
+							>
 								Subscribe
 							</button>
 						</form>
@@ -371,32 +418,70 @@
 
 			<div class="footer-bottom">
 				<div class="container inner clearfix">
-					<div class="row">
-						<div class="col-md-4">
-							<p class="float-left">
-								© 2020 Yenoma All rights reserved.
-							</p>
+					<div
+						class="d-flex flex-column flex-md-row align-items-center justify-content-between"
+					>
+						<div data-i18n="footer-copyright">
+							<p>© 2020 Yenoma All rights reserved.</p>
 						</div>
-						<div class="col-md-4 text-center">
+
+						<div>
 							<ul class="footer-menu">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
-						<div class="col-md-4">
-							<ul class="footer-menu float-right">
+								<li>
+									<a data-i18n="header-home" href="index.html"
+										>Home</a
+									>
+								</li>
 								<li>
 									<a
-										id="choose-lang"
-										type="button"
-										data-toggle="modal"
-										href="#modal-notification01"
+										data-i18n="header-about"
+										href="about.html"
+										>About</a
 									>
-										Change Language
-									</a>
+								</li>
+								<li>
+									<a
+										data-i18n="header-contact"
+										href="contact.html"
+										>Contact</a
+									>
+								</li>
+								<li>
+									<a
+										data-i18n="header-why"
+										href="why-yenoma.html"
+										>Why Us</a
+									>
 								</li>
 							</ul>
+						</div>
+
+						<div class="dropup hover">
+							<a
+								data-i18n="header-language"
+								href="#"
+								class="dropdown-toggle"
+								data-toggle="dropdown"
+								>English</a
+							>
+
+							<!-- MOVE INLINE STYLES TO STYLESHEET -->
+							<ul
+								class="dropdown-menu ml-n5"
+								style="
+									max-height: 150px;
+									overflow: scroll;
+									left: -110px;
+								"
+							>
+								<li>
+									<a class="p-2" href="?lang=en">English</a>
+								</li>
+								<li>
+									<a class="p-2" href="?lang=de"> Deutsch </a>
+								</li>
+							</ul>
+							<!-- /.dropdown-menu -->
 						</div>
 					</div>
 
@@ -405,72 +490,8 @@
 				<!-- .container -->
 			</div>
 			<!-- .footer-bottom -->
-			<!-- ============================================================= MODAL NOTIFICATION01 ============================================================= -->
-
-			<!-- ============================================================= MODAL NOTIFICATION01 : END ============================================================= -->
 		</footer>
-		<div
-			class="modal fade"
-			id="modal-notification01"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="modal-notification01"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-xs">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title" id="modal-notification01">
-							Choose Language
-						</h4>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-							aria-label="Close"
-						>
-							<span aria-hidden="true"
-								><i class="icon-cancel-1"></i
-							></span>
-						</button>
-					</div>
-					<!-- /.modal-header -->
 
-					<!-- ============================================================= MODAL CONTENT ============================================================= -->
-
-					<div class="modal-body">
-						<div class="container inner-xs text-center">
-							<ul class="modal-list">
-								<li>
-									<a href="#en" data-dismiss="modal"
-										>English
-									</a>
-								</li>
-								<li>
-									<a href="#de" data-dismiss="modal">
-										Deutsch
-									</a>
-								</li>
-							</ul>
-						</div>
-						<!-- /.container -->
-					</div>
-					<!-- /.modal-body -->
-
-					<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
-
-					<div class="modal-footer">
-						<button type="button" class="btn" data-dismiss="modal">
-							Close
-						</button>
-					</div>
-					<!-- /.modal-footer -->
-				</div>
-				<!-- /.modal-content -->
-			</div>
-			<!-- /.modal-dialog -->
-		</div>
-		<!-- /.modal -->
 		<!-- ============================================================= FOOTER : END ============================================================= -->
 
 		<!-- JavaScripts placed at the end of the document so the pages load faster -->
@@ -489,6 +510,14 @@
 		<script src="assets/js/viewport-units-buggyfill.js"></script>
 		<script src="assets/js/selected-scroll.js"></script>
 		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/CLDRPluralRuleParser.js"></script>
+		<script src="assets/js/jquery.i18n.js"></script>
+		<script src="assets/js/jquery.i18n.messagestore.js"></script>
+		<script src="assets/js/jquery.i18n.fallbacks.js"></script>
+		<script src="assets/js/jquery.i18n.language.js"></script>
+		<script src="assets/js/jquery.i18n.parser.js"></script>
+		<script src="assets/js/jquery.i18n.emitter.js"></script>
+		<script src="assets/js/jquery.i18n.emitter.bidi.js"></script>
 		<script src="assets/js/custom.js"></script>
 	</body>
 </html>
