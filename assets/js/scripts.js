@@ -178,8 +178,9 @@ $(document).ready(function () {
 		running = false;
 		$.each(objectStyles, function (obj, prop) {
 			if (scrolledFromTop > prop.delay) {
+
 				if (!prop.animTriggered) prop.animTriggered = true;
-				prop.scrolled = scrolledFromTop - prop.delay;
+				prop.scrolled = scrolledFromTop - prop.delay
 				if (prop.scrolled <= prop.distance) {
 					prop.currentChange = prop.start - prop.scrolled * prop.scrollRatio.toFixed(2);
 					$(prop.element).css(prop.style, prop.currentChange + 'px');
@@ -199,6 +200,7 @@ $(document).ready(function () {
 				prop.animTriggered = false;
 				$(prop.element).css(prop.style, prop.start + 'px');
 			}
+			console.log("Delay ", prop.delay, " Scrolled from Top ", scrolledFromTop, " Prop Distance ", prop.distance, " Prop Scrolled ", prop.scrolled, " Resizing ", prop.style, prop.currentChange + 'px', " Finished ", prop.style, prop.end + 'px')
 		});
 	}
 

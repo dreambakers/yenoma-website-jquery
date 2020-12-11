@@ -7,12 +7,24 @@
 .get-started {
 	background-color: #3949ab !important; /* Black background color */
 	color: #fff !important;
+	padding: 10px;
+	align-self: center;
+	border: 1px solid #00000000;
 }
 
 .get-started:hover {
 	background-color: inherit !important;
 	border: 1px solid #3949ab !important;
 	color: #3949ab !important;
+}
+
+.cookie-bar {
+	position: fixed !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	top: auto;
+	right: 0 !important;
+	box-shadow: 0px -3px 16px gray;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -32,50 +32,43 @@ $(function () {
 			locale: loc
 		})
 	}
-	setTimeout(() => { $("[data-i18n]").i18n() }, 1000)
+	console.log($("[data-i18n]"))
+	// $("body").i18n()
+	setTimeout(() => { $("body").i18n() }, 1000)
+	/**
+	 * Setting Styles on Get started Button
+	 */
+
 	var cookies = `
-	<button id="toggle-modal" type="button" style="display:none;" data-toggle="modal" href="#modal-notification01">Open modal</button>
-	<div class="modal fade" id="modal-notification01" tabindex="-1" role="dialog" aria-labelledby="modal-notification01" aria-hidden="false">
-		<div class="modal-dialog modal-xs">
-			<div class="modal-content">
-				
-				<div class="modal-header">
-					<h4 class="modal-title" id="modal-notification01">Accept Cookies</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
-				</div><!-- /.modal-header -->
-				
-				<!-- ============================================================= MODAL CONTENT ============================================================= -->
-				
-				<div class="modal-body">
-					
-					<div class="container inner-xs text-center">
-						<h2>High five!</h2>
-						<p>In order to be compliant to European law, (GDPR) the website visitor must be asced to accept cookies!</p>
-					</div><!-- /.container -->
-					
-				</div><!-- /.modal-body -->
-				
-				<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
-				
-				<div class="modal-footer">
-					<div>
-						<button id="accept-cookies" type="button" class="btn" data-dismiss="modal">Accept</button>
-						<button id="decline-cookies" type="button" class="btn" data-dismiss="modal">Close</button>
-					</div>
-					
-				</div><!-- /.modal-footer -->
-				
-			</div><!-- /.modal-content -->	
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
+	<section id="cookie-bar" class="light-bg cookie-bar">
+		<div class="container inner-xs">
+			<div class="row">
+				<div class="col-md-10 mx-auto text-center">
+					<p>
+						<b>Do you like cookies?</b> &#x1F36A; We use
+						cookies to ensure you get the best experience on
+						our website.
+					</p>
+				</div>
+				<!-- /.col -->
+			</div>
+			<div class="row justify-content-center mt-3">
+
+				<a id="learn-more" href="privacy.html" class="btn">Learn More</a>
+				<button id="accept-cookies" type="button" class="btn mx-3">I Agree</button>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
 	`
 	if (!sessionStorage.getItem("accepted")) {
 		$("body").append(cookies)
-		$("#toggle-modal").trigger("click")
 	}
 
-	$("#accept-cookies").click(function () {
+	$("#accept-cookies, #learn-more").click(function () {
 		sessionStorage.setItem("accepted", "true")
+		$("#cookie-bar").hide()
 	})
 
 
