@@ -130,7 +130,7 @@ $(document).ready(function () {
 				element: '.navbar .navbar-collapse', // ------------------	CSS Class of Element that is being changed
 				style: 'padding-top', // -------------------------------	CSS Style that is being changed
 				start: 'currentValueFromCSS', // -----------------------	Change from e.g. 30 (Pixels) — if a String/Text is entered then the current Value from CSS File is being taken
-				end: 0, // -------------------------------------------	Change to e.g. 0 (Pixels)
+				end: 10, // -------------------------------------------	Change to e.g. 0 (Pixels)
 				distance: 300, // -----------------------------------------	Element is being resized for e.g. 300 (Pixels) scrolled
 				delay: topHeaderHeight // ------------------------------	Delay before Element starts changing e.g. 50 (Pixels)
 			},
@@ -138,7 +138,7 @@ $(document).ready(function () {
 				element: '.navbar .navbar-collapse',
 				style: 'padding-bottom',
 				start: 'currentValueFromCSS',
-				end: 0,
+				end: 10,
 				distance: 300,
 				delay: topHeaderHeight
 			},
@@ -178,7 +178,6 @@ $(document).ready(function () {
 		running = false;
 		$.each(objectStyles, function (obj, prop) {
 			if (scrolledFromTop > prop.delay) {
-
 				if (!prop.animTriggered) prop.animTriggered = true;
 				prop.scrolled = scrolledFromTop - prop.delay
 				if (prop.scrolled <= prop.distance) {
@@ -200,7 +199,6 @@ $(document).ready(function () {
 				prop.animTriggered = false;
 				$(prop.element).css(prop.style, prop.start + 'px');
 			}
-			console.log("Delay ", prop.delay, " Scrolled from Top ", scrolledFromTop, " Prop Distance ", prop.distance, " Prop Scrolled ", prop.scrolled, " Resizing ", prop.style, prop.currentChange + 'px', " Finished ", prop.style, prop.end + 'px')
 		});
 	}
 

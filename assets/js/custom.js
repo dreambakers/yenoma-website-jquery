@@ -20,24 +20,22 @@ $.isScrolledIntoView = function (elem) {
 
 	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
-$.i18n().load({
-	en: "assets/i18n/en.json",
-	de: "assets/i18n/de.json",
-})
+
+
 
 $(function () {
+	$.i18n().load({
+		en: "assets/i18n/en.json",
+		de: "assets/i18n/de.json",
+	}).done(function () {
+		$("body").i18n()
+	})
 	var loc = $.urlParam("lang")
 	if (loc) {
 		$.i18n({
 			locale: loc
 		})
 	}
-	console.log($("[data-i18n]"))
-	// $("body").i18n()
-	setTimeout(() => { $("body").i18n() }, 1000)
-	/**
-	 * Setting Styles on Get started Button
-	 */
 
 	var cookies = `
 	<section id="cookie-bar" class="light-bg cookie-bar">
@@ -53,7 +51,6 @@ $(function () {
 				<!-- /.col -->
 			</div>
 			<div class="row justify-content-center mt-3">
-
 				<a id="learn-more" href="privacy.html" class="btn">Learn More</a>
 				<button id="accept-cookies" type="button" class="btn mx-3">I Agree</button>
 			</div>

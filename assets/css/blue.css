@@ -115,9 +115,9 @@ ul.circled li:before,
 }
 
 ::selection {
-	background: #b6dbf2; /* Safari */
+	background: #c5cae9; /* Safari */
 }
 
 ::-moz-selection {
-	background: #b6dbf2; /* Firefox */
+	background: #c5cae9; /* Firefox */
 }
