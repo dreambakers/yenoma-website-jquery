@@ -43,9 +43,7 @@ $(function () {
 			<div class="row">
 				<div class="col-md-10 mx-auto text-center">
 					<p>
-						<b>Do you like cookies?</b> &#x1F36A; We use
-						cookies to ensure you get the best experience on
-						our website.
+						We use cookies to ensure you get the best experience on	our website. We may share your information with our advertizing and analytic partners. Find out ore bout cookies by reading our <a class="text" href="terms.html">Terms & Conditions</a> which contains further information about cookies and other technologies we use and information about how to disable them
 					</p>
 				</div>
 				<!-- /.col -->
@@ -67,6 +65,8 @@ $(function () {
 		sessionStorage.setItem("accepted", "true")
 		$("#cookie-bar").hide()
 	})
+
+	// Align Navbar items to center except get started button
 
 
 })
